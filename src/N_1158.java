@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Scanner;
 
 public class N_1158 {
@@ -9,23 +7,24 @@ public class N_1158 {
         int people = scan.nextInt();
         int select = scan.nextInt();
         scan.nextLine();
-        int count = 1;
+        int index = 0;
         LinkedList<Integer> linkedList = new LinkedList<>();
-        List<Integer> list = new ArrayList<>();
+        StringBuilder sb = new StringBuilder();
         for (int i = 1; i <= people; i++) {
             linkedList.add(i);
         }
+
+        sb.append("<");
         while (!linkedList.isEmpty()) {
-            if (count == select) {
-                list.add(linkedList.removeFirst());
-                count = 1;
+            index = (index + select - 1) % linkedList.size();
+            if (linkedList.size() != 1) {
+                sb.append(linkedList.remove(index)).append(", ");
             }else{
-                linkedList.addLast(linkedList.removeFirst());
-                count++;
+                sb.append(linkedList.remove(index));
             }
         }
-        System.out.println(list);
-        scan.close();
+        sb.append(">");
+        System.out.println(sb);
 
     }
 }

@@ -14,8 +14,9 @@ public class N_9012 {
                 if (stack.isEmpty()) {
                     checkFlag = false;
                     break;
+                } else {
+                    stack.pop();
                 }
-                stack.pop();
             }
         }
         if (stack.isEmpty() && checkFlag) {

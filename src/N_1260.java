@@ -67,21 +67,21 @@ public class N_1260 {
         for (int i = 0; i < M; i++) {
             int x = sc.nextInt();
             int y = sc.nextInt();
-            branch[x][y] = branch[y][x] = 1;
+            branch[x][y] = branch[y][x] = 1; // 현재 노드와 연결 되어 있는 노드의 인덱스에 값을 1로 변경
         }
 
-        dfs(V);
+        dfs(V); // 깊이 우선 탐색
         System.out.println();
 
-        Arrays.fill(visit, false);
-        bfs(V);
+        Arrays.fill(visit, false); // visit의 값을 전부 false로 변경
+        bfs(V); // 너비 우선 탐색
     }
 
     public static void dfs(int start) {
-        visit[start] = true;
+        visit[start] = true; // 현재 노드값의 인덱스에 값을 true로 변경
         System.out.print(start + " ");
-        for (int i = 1; i <= N; i++) {
-            if (branch[start][i] == 1 && !visit[i]) {
+        for (int i = 1; i <= N; i++) {  // 노드 정점의 개수 만큼 반복
+            if (branch[start][i] == 1 && !visit[i]) {   // 현재 노드와 연결이 되어 있고 방문 하지 않았다면 dfs함수 호츌
                 dfs(i);
             }
 
@@ -90,17 +90,17 @@ public class N_1260 {
 
     public static void bfs(int start) {
         queue = new LinkedList<Integer>();
-        queue.offer(start);
-        visit[start] = true;
+        queue.offer(start); // 현재 노드 값을 큐에 삽입
+        visit[start] = true;    // 현재 노드값의 인덱스 값을 true로 변경
         System.out.print(start + " ");
 
-        while (!queue.isEmpty()) {
-            int temp = queue.poll();
+        while (!queue.isEmpty()) {  // 큐가 비어 있지 않을 때 까지 반복
+            int temp = queue.poll();    // temp 변수에 현재 노드 값을 저장
 
-            for (int i = 1; i < branch.length; i++) {
-                if (branch[temp][i] == 1 && !visit[i]) {
-                    queue.offer(i);
-                    visit[i] = true;
+            for (int i = 1; i < branch.length; i++) {   // branch의 열의 길이 만큼 반복
+                if (branch[temp][i] == 1 && !visit[i]) {    // 현재 노드와 연결이 되어 있고 연결 되어 있는 노드를 방문하지 않았다면 조건문 실행
+                    queue.offer(i); // 현재 노드와 연결 되어 있는 노드를 큐에 저장
+                    visit[i] = true;    // 현재 노드와 연결 되어 있는 노드값의 인덱스 값을 true로 변경
                     System.out.print(i + " ");
                 }
             }

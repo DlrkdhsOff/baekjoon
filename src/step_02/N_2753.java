@@ -1,4 +1,4 @@
-package step_2;
+package step_02;
 
 import java.util.Scanner;
 

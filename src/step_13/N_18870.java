@@ -13,6 +13,7 @@ public class N_18870 {
         int n = Integer.parseInt(br.readLine());
         String[] data = br.readLine().split(" ");
         int[] clone = new int[n];
+
         for (int i = 0; i < n; i++) {
             clone[i] = Integer.parseInt(data[i]);
         }

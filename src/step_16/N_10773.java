@@ -32,7 +32,5 @@ public class N_10773 {
         }
 
         bw.flush();
-        bw.close();
-        br.close();
     }
 }

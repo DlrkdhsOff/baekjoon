@@ -17,6 +17,7 @@ public class N_10872 {
         if (n < 1) {
             return result;
         }
+
         return fact(n - 1, result * n);
     }
 }

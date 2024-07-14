@@ -1,7 +1,6 @@
 package step_16;
 
-import java.util.Scanner;
-import java.util.Stack;
+import java.util.*;
 
 public class N_9012 {
 

@@ -1,4 +1,5 @@
 package step_16;
+
 import java.io.*;
 import java.util.*;
 
@@ -36,7 +37,5 @@ public class N_2346 {
             }
         }
         bw.flush();
-        bw.close();
-        br.close();
     }
 }

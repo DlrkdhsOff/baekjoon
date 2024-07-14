@@ -10,7 +10,6 @@ public class N_10814 {
         scan.nextLine();
 
         List<String[]> list = new ArrayList<>();
-
         for (int i = 0; i < N; i++) {
             list.add(scan.nextLine().split(" "));
         }

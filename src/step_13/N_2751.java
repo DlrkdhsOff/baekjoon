@@ -1,9 +1,7 @@
 package step_13;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class N_2751 {
     public static void main(String[] args) throws IOException {
@@ -22,6 +20,5 @@ public class N_2751 {
             bw.write(num + "\n");
         }
         bw.flush();
-
     }
 }

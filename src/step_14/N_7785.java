@@ -26,7 +26,7 @@ public class N_7785 {
             }
         }
 
-        Collections.sort(list, Collections.reverseOrder());
+        list.sort(Collections.reverseOrder());
         for (String s : list) {
             bw.write(s + "\n");
         }

@@ -24,6 +24,7 @@ public class N_1269 {
                 count++;
             }
         }
+
         bw.write(count + "\n");
         bw.flush();
     }

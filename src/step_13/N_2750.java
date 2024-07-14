@@ -8,7 +8,6 @@ public class N_2750 {
         List<Integer> list = new ArrayList<>();
         int loop = scan.nextInt();
 
-
         for (int i = 0; i < loop; i++) {
             list.add(scan.nextInt());
         }

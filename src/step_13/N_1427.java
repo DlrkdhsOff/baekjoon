@@ -1,7 +1,7 @@
 package step_13;
 
 import java.io.*;
-import java.util.Arrays;
+import java.util.*;
 
 public class N_1427 {
     public static void main(String[] args) throws IOException {

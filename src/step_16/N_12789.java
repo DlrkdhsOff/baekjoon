@@ -8,6 +8,7 @@ public class N_12789 {
         int N = scan.nextInt();
         Queue<Integer> queue = new LinkedList<>();
         Stack<Integer> stack = new Stack<>();
+
         for (int i = 0; i < N; i++) {
             queue.offer(scan.nextInt());
         }

@@ -36,6 +36,7 @@ public class N_1764 {
         for (String name : list) {
             bw.write(name + "\n");
         }
+
         bw.flush();
     }
 }

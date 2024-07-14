@@ -7,7 +7,6 @@ public class N_2164 {
         Scanner scan = new Scanner(System.in);
 
         Queue<Integer> q = new LinkedList<>();
-
         int num = scan.nextInt();
 
         for (int i = 1; i <= num; i++) {

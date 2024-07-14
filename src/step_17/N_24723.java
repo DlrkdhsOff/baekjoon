@@ -9,6 +9,7 @@ public class N_24723 {
 
         int n = Integer.parseInt(br.readLine());
         int result = (int)Math.pow(2, n);
+
         bw.write(result + "\n");
         bw.flush();
     }

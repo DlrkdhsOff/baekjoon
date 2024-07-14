@@ -33,6 +33,5 @@ public class N_1181 {
         for (String word : list) {
             System.out.println(word);
         }
-
     }
 }

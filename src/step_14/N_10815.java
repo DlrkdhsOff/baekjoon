@@ -21,6 +21,5 @@ public class N_10815 {
             }
         }
         bw.flush();
-
     }
 }

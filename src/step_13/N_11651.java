@@ -8,7 +8,6 @@ public class N_11651 {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-
         int each = Integer.parseInt(br.readLine());
         List<int[]> list = new ArrayList<>();
 

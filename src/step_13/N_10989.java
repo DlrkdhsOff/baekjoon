@@ -20,6 +20,5 @@ public class N_10989 {
             bw.write(num + "\n");
         }
         bw.flush();
-
     }
 }

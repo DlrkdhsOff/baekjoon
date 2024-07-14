@@ -36,6 +36,7 @@ public class N_1620 {
                 bw.write(value.get(s) + "\n");
             }
         }
+
         bw.flush();
     }
 }

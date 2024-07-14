@@ -3,7 +3,6 @@ package step_16;
 import java.util.Scanner;
 import java.util.Stack;
 
-
 public class N_4949 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

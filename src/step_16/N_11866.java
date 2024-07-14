@@ -22,8 +22,8 @@ public class N_11866 {
             }
             sb.append(q.poll()).append(", ");
         }
-        sb.append(q.poll()).append(">");
 
+        sb.append(q.poll()).append(">");
         System.out.println(sb);
     }
 }

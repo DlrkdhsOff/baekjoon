@@ -13,7 +13,6 @@ public class N_2587 {
             list.add(n);
             total += n;
         }
-
         Collections.sort(list);;
 
         System.out.println(total / 5);

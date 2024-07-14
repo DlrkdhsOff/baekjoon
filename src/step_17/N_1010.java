@@ -1,7 +1,7 @@
 package step_17;
 
 import java.io.*;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class N_1010 {
     public static void main(String[] args) throws IOException {

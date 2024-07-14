@@ -9,6 +9,7 @@ public class N_15439 {
 
         int n = Integer.parseInt(br.readLine());
         int result = n * (n - 1);
+
         bw.write(result + "\n");
         bw.flush();
     }

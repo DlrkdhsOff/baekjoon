@@ -1,24 +1,22 @@
-package step_07;
+package step_13;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.Arrays;
 
-public class N_2751 {
+public class N_10989 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int loop = Integer.parseInt(br.readLine());
-        List<Integer> list = new ArrayList<>();
+        int[] arr = new int[loop];
 
         for (int i = 0; i < loop; i++) {
-            list.add(Integer.parseInt(br.readLine()));
+            arr[i] = Integer.parseInt(br.readLine());
         }
-        Collections.sort(list);
+        Arrays.sort(arr);
 
-        for (int num : list) {
+        for (int num : arr) {
             bw.write(num + "\n");
         }
         bw.flush();

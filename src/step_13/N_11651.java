@@ -1,12 +1,13 @@
-package step_07;
+package step_13;
 
 import java.io.*;
 import java.util.*;
 
-public class N_11650 {
+public class N_11651 {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
 
         int each = Integer.parseInt(br.readLine());
         List<int[]> list = new ArrayList<>();
@@ -24,14 +25,15 @@ public class N_11650 {
         list.sort(new Comparator<int[]>() {
             @Override
             public int compare(int[] o1, int[] o2) {
-                if (o1[0] == o2[0]) {
-                    return Integer.compare(o1[1], o2[1]);
-                } else {
+                if (o1[1] == o2[1]) {
                     return Integer.compare(o1[0], o2[0]);
+                } else {
+                    return Integer.compare(o1[1], o2[1]);
                 }
             }
         });
 
+        // 결과 출력
         for (int[] a : list) {
             bw.write(a[0] + " " + a[1] + "\n");
         }

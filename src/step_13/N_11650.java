@@ -35,6 +35,7 @@ public class N_11650 {
         for (int[] a : list) {
             bw.write(a[0] + " " + a[1] + "\n");
         }
+
         bw.flush();
     }
 }

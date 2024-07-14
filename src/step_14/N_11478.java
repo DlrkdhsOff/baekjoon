@@ -16,6 +16,7 @@ public class N_11478 {
                 set.add(substring);
             }
         }
+
         bw.write(set.size() + "\n");
         bw.flush();
     }

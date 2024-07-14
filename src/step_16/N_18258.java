@@ -39,7 +39,5 @@ public class N_18258 {
             }
         }
         bw.flush();
-        bw.close();
-        br.close();
     }
 }

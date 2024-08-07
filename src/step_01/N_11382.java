@@ -1,6 +1,6 @@
 package step_01;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class N_11382 {
     public static void main(String[] args) {

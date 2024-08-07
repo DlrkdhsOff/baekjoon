@@ -9,7 +9,6 @@ public class N_1001 {
         int A = scan.nextInt();
         int B = scan.nextInt();
         scan.nextLine();
-
         System.out.println(A - B);
     }
 }

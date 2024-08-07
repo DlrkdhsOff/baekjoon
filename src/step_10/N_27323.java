@@ -14,6 +14,5 @@ public class N_27323 {
 
         bw.write(result + "\n");
         bw.flush();
-
     }
 }

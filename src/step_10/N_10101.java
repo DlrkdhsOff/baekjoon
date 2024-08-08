@@ -22,7 +22,6 @@ public class N_10101 {
         } else {
             bw.write("Error\n");
         }
-
         bw.flush();
     }
 }
